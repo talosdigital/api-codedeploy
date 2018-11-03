@@ -7,4 +7,4 @@ cp $CODEDEPLOY/deployment/configs/healthcheck.html $WORKSPACE/healthcheck/index.
 
 cp -n $CODEDEPLOY/deployment/configs/*.xml /etc/tomcat/Catalina/localhost/
 
-cp $CODEDEPLOY/deployment/config/setenv.sh $TOMCAT_HOME/bin/setenv.sh
+cp $CODEDEPLOY/deployment/configs/setenv.sh $TOMCAT_HOME/bin/setenv.sh
