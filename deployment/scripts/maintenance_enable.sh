@@ -1,3 +1,3 @@
 #!/bin/bash
 
-systemctl stop tomcat
+systemctl start tomcat
