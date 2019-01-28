@@ -4,5 +4,3 @@
 
 mkdir -p $WORKSPACE/healthcheck
 cp $CODEDEPLOY/deployment/configs/healthcheck.html $WORKSPACE/healthcheck/index.html
-
-cp -n $CODEDEPLOY/deployment/configs/*.xml /etc/tomcat/Catalina/localhost/
