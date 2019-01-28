@@ -5,7 +5,7 @@ yum -y update
 yum -y upgrade
 
 # Required Software
-yum -y install git figlet gcc-c++ nfs-utils awscli
+yum -y install git figlet gcc-c++ nfs-utils awscli jq
 
 # Update PIP and AWS CLI
 pip install --upgrade pip
