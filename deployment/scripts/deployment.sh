@@ -7,6 +7,6 @@ rm -rf $WORKSPACE/$DEPLOY_ENV*
 mkdir $WORKSPACE
 
 echo "Deployment"
-mv $CODEDEPLOY/target/$WAR_FILE $WORKSPACE/$DEPLOY_ENV
+mv $CODEDEPLOY/target/$WAR_FILE $WORKSPACE
 
 echo "All done!"
