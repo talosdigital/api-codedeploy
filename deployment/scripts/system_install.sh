@@ -12,7 +12,7 @@ pip install --upgrade pip
 pip install --upgrade awscli
 
 # Install Tomcat
-yum install -y tomcat
+yum install -y tomcat tomcat-webapps tomcat-admin-webapps 
 
 # Add welcome message
 if ! grep -q "Banner /etc/ssh/sshd_banner" /etc/ssh/sshd_config; then
