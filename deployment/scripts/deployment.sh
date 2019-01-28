@@ -4,9 +4,9 @@
 
 echo "Files replacement"
 rm -rf $WORKSPACE/$DEPLOY_ENV*
-mkdir $WORKSPACE
+mkdir $WORKSPACE/
 
 echo "Deployment"
-mv $CODEDEPLOY/target/$WAR_FILE $WORKSPACE
+cp $CODEDEPLOY/target/$WAR_FILE $WORKSPACE/$DEPLOY_ENV.war
 
 echo "All done!"
