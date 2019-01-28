@@ -1,4 +1,0 @@
-<Context>
-  <Environment name="spring.profiles.active" value="rc2" type="java.lang.String" override="false" />
-  <Environment name="beyontec.endpoint.timeout" value="180000" type="java.lang.String" override="true" />
-</Context>
