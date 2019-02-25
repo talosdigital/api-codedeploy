@@ -12,7 +12,8 @@ fi
 echo "Downloading tomcat"
 cd /tmp
 wget "https://www-us.apache.org/dist/tomcat/tomcat-7/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz"
-mv "apache-tomcat$TOMCAT_VERSION.tar.gz" /usr/share/tomcat
+tar xvzf "apache-tomcat-$TOMCAT_VERSION.tar.gz"
+mv "apache-tomcat-$TOMCAT_VERSION" /usr/share/tomcat
 
 echo "Creating tomcat user and group"
 # Create tomcat user
