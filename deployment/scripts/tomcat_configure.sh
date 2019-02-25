@@ -5,4 +5,6 @@
 mkdir -p $WORKSPACE/healthcheck
 cp $CODEDEPLOY/deployment/configs/healthcheck.html $WORKSPACE/healthcheck/index.html
 
-cp $CODEDEPLOY/deployment/configs/context.xml $TOMCAT_HOME/conf/Catalina/localhost/$DEPLOY_ENV.xml
+if [ -f $CODEDEPLOY/deployment/configs/context.xml ]; then
+  cp $CODEDEPLOY/deployment/configs/context.xml $TOMCAT_HOME/conf/Catalina/localhost/$DEPLOY_ENV.xml
+fi

@@ -8,6 +8,9 @@ hooks:
     - location: deployment/scripts/system_install.sh
       timeout: 700
       runas: root
+    - location: deployment/scripts/tomcat_install.sh
+      timeout: 700
+      runas: root
     - location: deployment/scripts/maintenance_enable.sh
       timeout: 300
       runas: root
@@ -17,9 +20,6 @@ hooks:
       runas: root
     - location: deployment/scripts/deployment.sh
       timeout: 700
-      runas: root
-    - location: deployment/scripts/cleanup.sh
-      timeout: 300
       runas: root
   ApplicationStart:
     - location: deployment/scripts/maintenance_disable.sh
