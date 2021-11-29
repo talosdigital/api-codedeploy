@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /opt/api-codedeploy
+file_exists_behavior: OVERWRITE
 hooks:
   BeforeInstall:
     - location: deployment/scripts/system_install.sh
